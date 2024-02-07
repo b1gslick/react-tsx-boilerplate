@@ -86,12 +86,11 @@ module.exports = (env, argv) => {
     plugins: [
       new CleanWebpackPlugin(),
       new MiniCssExtractPlugin({
-        // Options similar to the same options in webpackOptions.output
         // both options are optional
         filename: '[name].[contenthash].css',
       }),
       new HTMLWebpackPlugin({
-        template: path.join(__dirname, './src/index.html'),
+        template: path.resolve(__dirname, 'public', 'index.html'),
       }),
     ],
   }
