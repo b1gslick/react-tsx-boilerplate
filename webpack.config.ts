@@ -1,11 +1,11 @@
 import path from 'path'
 import type { Configuration } from 'webpack'
-import { buildWebpack } from './config/build/buildWebpack'
+import { buildWebpack } from './config/webpack/buildWebpack'
 import {
   BuildMode,
   BuildPaths,
   BuildPlatform,
-} from './config/build/types/types'
+} from './config/webpack/types/types'
 
 interface EnvVariables {
   mode: BuildMode
